@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#00FFFFFF"
     tools:context=".MainActivity">
 
     <ImageView
@@ -79,7 +80,7 @@
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="68dp"
-        android:gravity="center_horizontal|center_vertical"
+        android:gravity="center"
         android:text="Cloud"
         android:textColor="@android:color/background_light"
         android:textSize="21sp"
@@ -122,5 +123,14 @@
         android:background="#00FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgWeather"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="1dp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtBoxWeather"
+        app:layout_constraintEnd_toStartOf="@+id/txtBoxWeather"
+        app:srcCompat="?attr/selectableItemBackground" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

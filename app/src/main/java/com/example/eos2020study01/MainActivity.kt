@@ -47,25 +47,31 @@ class MainActivity : AppCompatActivity() {
             if(weatherId>=200 && weatherId<=232){
                 weatherName="뇌우"
                 imgBackground.setImageDrawable(resources.getDrawable(R.drawable.rainy02, applicationContext.theme))
-
+                imgWeather.setImageDrawable(resources.getDrawable(R.drawable.thunder_storm_day, applicationContext.theme))
             }else if(weatherId>=300 && weatherId<=321){
                 weatherName="이슬비"
                 imgBackground.setImageDrawable(resources.getDrawable(R.drawable.rainy04, applicationContext.theme))
+                imgWeather.setImageDrawable(resources.getDrawable(R.drawable.rainy_day_0, applicationContext.theme))
             }else if(weatherId>=500 && weatherId<=531){
                 weatherName="비"
                 imgBackground.setImageDrawable(resources.getDrawable(R.drawable.rainy05, applicationContext.theme))
+                imgWeather.setImageDrawable(resources.getDrawable(R.drawable.rainy_day_1, applicationContext.theme))
             }else if(weatherId>=600 && weatherId<=622){
                 weatherName="눈"
                 imgBackground.setImageDrawable(resources.getDrawable(R.drawable.snowy03, applicationContext.theme))
+                imgWeather.setImageDrawable(resources.getDrawable(R.drawable.snowy_day, applicationContext.theme))
             }else if(weatherId==701 || weatherId==741){
                 weatherName="안개"
                 imgBackground.setImageDrawable(resources.getDrawable(R.drawable.cloudy02, applicationContext.theme))
+                imgWeather.setImageDrawable(resources.getDrawable(R.drawable.mist_day, applicationContext.theme))
             } else if(weatherId==800){
                 weatherName="맑음"
                 imgBackground.setImageDrawable(resources.getDrawable(R.drawable.sunny02, applicationContext.theme))
+                imgWeather.setImageDrawable(resources.getDrawable(R.drawable.sunny_day, applicationContext.theme))
             }else if(weatherId>=801 && weatherId<=804){
                 weatherName="흐림"
                 imgBackground.setImageDrawable(resources.getDrawable(R.drawable.cloudy01, applicationContext.theme))
+                imgWeather.setImageDrawable(resources.getDrawable(R.drawable.cloudy_mid_day, applicationContext.theme))
             }
             else{
                 weatherName="Unknown"
